@@ -3,14 +3,7 @@
 
 import React from "react";
 
-const navigate_tag = [
-  "home",
-  "about",
-  "work",
-  "skills",
-  // "testimonial",
-  "contact",
-];
+const navigate_tag = ["home", "about", "work", "skills", "contact"];
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
     {navigate_tag.map((item, index) => (

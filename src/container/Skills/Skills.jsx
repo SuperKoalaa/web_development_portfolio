@@ -82,22 +82,11 @@ const test_data_experience = [
     ],
   },
 ];
+
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
-  // useEffect(() => {
-  //   const query = '*[_type == "experiences"]';
-  //   const skillsQuery = '*[_type == "skills"]';
-
-  //   client.fetch(query).then((data) => {
-  //     setExperiences(data);
-  //   });
-
-  //   client.fetch(skillsQuery).then((data) => {
-  //     setSkills(data);
-  //   });
-  // }, []);
   useEffect(() => {
     setExperiences(test_data_experience);
     setSkills(test_data_skills);
@@ -146,14 +135,6 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-                    {/* <Tooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.desc}
-                    </Tooltip> */}
                   </>
                 ))}
               </motion.div>

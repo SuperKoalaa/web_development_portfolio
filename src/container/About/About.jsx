@@ -5,6 +5,7 @@ import { images } from "../../constants";
 import "./About.scss";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
+// Enter Data ------ This kind of data can be store in DynamoDB later
 const abouts = [
   {
     title: "Software Tester",
@@ -25,6 +26,7 @@ const abouts = [
 ];
 const head_text_data =
   "With a great passion for solving problems, I am dedicated to using coding to simplify complex issues.";
+
 const About = () => {
   return (
     <>
